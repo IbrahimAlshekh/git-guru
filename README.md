@@ -22,6 +22,12 @@ Finally, this: Git is the one skill that never leaves your day. You might go wee
 
 That is what this handbook is for.
 
+One more thing worth mentioning. This handbook was itself written with the help of AI, and it is tracked with Git. If you browse the commit history of this repository, you will see how it evolved: what was added, what was corrected, what was rethought.
+
+The structure and content are based on my own experience as a developer, shaped by the things I wished I had understood earlier. But like any living project, it is not finished. When I find something misleading, something that could be explained better, or a concept that deserves more attention, I will come back and improve it. This handbook will grow over time, and the commit history will show every step of that growth. 
+
+In a way, that is the most fitting thing about it, a book about Git, managed with Git, improving with time.
+
 ---
 
 ## Who This Is For
