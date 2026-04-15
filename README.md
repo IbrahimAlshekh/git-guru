@@ -129,3 +129,9 @@ Start with Task 01: `../tasks/01-first-commit/TASK.md`
 ## Start Here
 
 → [Task 01: First Commit](tasks/01-first-commit/TASK.md)
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). You are free to use, share, and adapt it — just keep the attribution.
