@@ -12,7 +12,7 @@ When you ran `git branch coding-standards`, Git created a tiny file at `.git/ref
 cat .git/refs/heads/coding-standards
 ```
 
-That's why branches are "cheap" , creating one doesn't copy any files, doesn't duplicate history, doesn't take up meaningful disk space. It's one 40-byte pointer.
+That's why branches are "cheap", creating one doesn't copy any files, doesn't duplicate history, doesn't take up meaningful disk space. It's one 40-byte pointer.
 
 When you make a commit on a branch, Git moves that pointer forward to the new commit. When you switch branches, Git moves HEAD and swaps your working directory to match.
 
@@ -44,6 +44,6 @@ A ← B ← C ← D ← E ← F ← G
 
 `main` still points at commit E. `coding-standards` points at G. They share the history A through E. F and G are *only* on `coding-standards`.
 
-HEAD points to `coding-standards`, which means "you are on that branch." When you switch to `main`, HEAD moves, and Git restores your working directory to what it looked like at commit E , which didn't include `CODING_STANDARDS.md`.
+HEAD points to `coding-standards`, which means "you are on that branch." When you switch to `main`, HEAD moves, and Git restores your working directory to what it looked like at commit E, which didn't include `CODING_STANDARDS.md`.
 
 This is the graph in action. Once you can picture this, everything else in Git makes sense.

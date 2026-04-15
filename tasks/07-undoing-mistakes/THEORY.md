@@ -6,7 +6,7 @@
 
 `git commit --amend` doesn't "edit" a commit. It **replaces** it with a new one. The old commit gets a different hash, which means it's a different object in Git's eyes.
 
-This is safe when the commit is only on your local machine. But if you've already pushed it to a shared remote, amending creates a divergence , your local history and the remote history disagree. That causes problems for everyone else on the team.
+This is safe when the commit is only on your local machine. But if you've already pushed it to a shared remote, amending creates a divergence, your local history and the remote history disagree. That causes problems for everyone else on the team.
 
 Rule of thumb: **amend freely before pushing. Never after.**
 
@@ -16,7 +16,7 @@ Rule of thumb: **amend freely before pushing. Never after.**
 
 These two commands both "undo" things, but in fundamentally different ways.
 
-### Reset , Rewrite History
+### Reset, Rewrite History
 
 `git reset` moves the branch pointer backward. It's like the commit never happened.
 
@@ -32,13 +32,13 @@ D still exists in Git's object store but no branch points to it.
 ```
 
 Three flavors:
-- `--soft` , moves the pointer, keeps changes staged
-- `--mixed` (default) , moves the pointer, keeps changes in working directory but unstaged
-- `--hard` , moves the pointer, *discards all changes*. Gone.
+- `--soft`, moves the pointer, keeps changes staged
+- `--mixed` (default), moves the pointer, keeps changes in working directory but unstaged
+- `--hard`, moves the pointer, *discards all changes*. Gone.
 
 `--hard` is destructive. Use it with intention.
 
-### Revert , Add Corrective History
+### Revert, Add Corrective History
 
 `git revert` creates a **new commit** that undoes a previous commit's changes.
 
@@ -51,7 +51,7 @@ After git revert D:
 D' has the opposite changes of D. The history still shows D happened.
 ```
 
-This is safe for shared branches because you're not rewriting anything , you're adding to history. Everyone can pull D' and the mistake is undone.
+This is safe for shared branches because you're not rewriting anything, you're adding to history. Everyone can pull D' and the mistake is undone.
 
 ### When to Use Which
 

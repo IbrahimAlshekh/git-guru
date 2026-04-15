@@ -2,7 +2,7 @@
 
 ## The Scenario
 
-The team lead reviewed your initial README and said: "Good start. Now add some actual content , we need a section on our team's communication guidelines. Also, fix the 'What's Inside' section to be more specific."
+The team lead reviewed your initial README and said: "Good start. Now add some actual content, we need a section on our team's communication guidelines. Also, fix the 'What's Inside' section to be more specific."
 
 You need to make *multiple changes* to an already-tracked file and commit them thoughtfully.
 
@@ -10,7 +10,7 @@ You need to make *multiple changes* to an already-tracked file and commit them t
 
 ## What to Do
 
-### Step 1 , See Where You Are
+### Step 1, See Where You Are
 
 Make sure you're in the `handbook/` directory. Run:
 
@@ -21,7 +21,7 @@ git log --oneline
 
 You should see your one commit from Task 01 and a clean working directory.
 
-### Step 2 , Edit the README
+### Step 2, Edit the README
 
 Open `README.md` and make these two changes:
 
@@ -30,7 +30,7 @@ Open `README.md` and make these two changes:
 ```
 ## What's Inside
 
-- [Communication Guidelines](#communication-guidelines) , How we communicate as a team
+- [Communication Guidelines](#communication-guidelines), How we communicate as a team
 - Coding Standards (coming soon)
 - Git Workflow (coming soon)
 - Troubleshooting (coming soon)
@@ -44,22 +44,22 @@ Open `README.md` and make these two changes:
 ### Meetings
 - Daily standup: 9:15 AM, 15 minutes maximum
 - All meetings must have an agenda shared at least 1 hour in advance
-- No meeting Wednesdays , this is focus time
+- No meeting Wednesdays, this is focus time
 
 ### Chat
-- Use public channels by default , avoid DMs for work discussions
+- Use public channels by default, avoid DMs for work discussions
 - Respond to messages within 4 hours during working hours
 - Use threads to keep conversations organized
 
 ### Code Reviews
 - Every pull request needs at least one approval
 - Review within 24 hours of being assigned
-- Be constructive , critique the code, not the person
+- Be constructive, critique the code, not the person
 ```
 
 Save the file.
 
-### Step 3 , Examine What Changed
+### Step 3, Examine What Changed
 
 Run:
 
@@ -69,9 +69,9 @@ git diff
 
 > 📖 **Stop and read** [THEORY.md](THEORY.md) **, Section 1: Reading a Diff** before continuing.
 
-Look at the output carefully. Git is showing you *exactly* what changed , lines added (in green with `+`) and lines removed (in red with `-`). This is one of Git's most useful features.
+Look at the output carefully. Git is showing you *exactly* what changed, lines added (in green with `+`) and lines removed (in red with `-`). This is one of Git's most useful features.
 
-### Step 4 , Stage and Check the Difference
+### Step 4, Stage and Check the Difference
 
 ```
 git add README.md
@@ -87,13 +87,13 @@ git diff --staged
 
 There they are. Same changes, but now Git is comparing the staging area to the last commit, not the working directory to the staging area.
 
-### Step 5 , Commit
+### Step 5, Commit
 
 ```
 git commit -m "Add communication guidelines and update table of contents"
 ```
 
-### Step 6 , One More Small Change
+### Step 6, One More Small Change
 
 The team lead sends you a quick message: "Can you add your name as the handbook maintainer at the bottom?"
 
@@ -140,7 +140,7 @@ You should see three commits, each with a clear, descriptive message.
 
 - `git diff` shows changes in your working directory (unstaged)
 - `git diff --staged` shows changes ready to be committed
-- You can make multiple changes and commit them separately , this keeps history clean
+- You can make multiple changes and commit them separately, this keeps history clean
 - Each commit should represent *one logical change*, not "everything I did today"
 
 ---

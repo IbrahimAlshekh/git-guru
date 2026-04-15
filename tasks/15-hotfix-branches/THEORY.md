@@ -26,7 +26,7 @@ feature      feat/ feat/
 
 ### The Dual-Merge Pattern
 
-Both release and hotfix branches merge into TWO targets. This is the most common mistake teams make when starting Gitflow , they forget one of the merges:
+Both release and hotfix branches merge into TWO targets. This is the most common mistake teams make when starting Gitflow, they forget one of the merges:
 
 | If you forget to merge into... | What happens |
 |-------------------------------|-------------|
@@ -48,10 +48,10 @@ Gitflow was designed for a world of scheduled releases. If your reality is:
 
 ...then Gitflow adds overhead without proportional benefit. Consider:
 
-**GitHub Flow** , `main` + feature branches + pull requests. Simple, fast, no ceremony.
+**GitHub Flow**, `main` + feature branches + pull requests. Simple, fast, no ceremony.
 
-**Trunk-Based Development** , Everyone commits to `main` (or very short-lived branches). Relies on feature flags and strong CI. The simplest model, but demands engineering discipline.
+**Trunk-Based Development**, Everyone commits to `main` (or very short-lived branches). Relies on feature flags and strong CI. The simplest model, but demands engineering discipline.
 
 ### The Real Takeaway
 
-Gitflow is a tool, not a rule. Now that you understand it, you can choose when to use it, when to simplify, and how to adapt it for your team's needs. The underlying Git skills , branching, merging, conflict resolution, history management , are universal. The workflow is a choice.
+Gitflow is a tool, not a rule. Now that you understand it, you can choose when to use it, when to simplify, and how to adapt it for your team's needs. The underlying Git skills, branching, merging, conflict resolution, history management, are universal. The workflow is a choice.

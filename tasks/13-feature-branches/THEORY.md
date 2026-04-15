@@ -4,7 +4,7 @@
 
 ## Section 1: Why --no-ff?
 
-By default, if Git can do a fast-forward merge (when the target branch hasn't diverged), it will , just moving the pointer forward. No merge commit.
+By default, if Git can do a fast-forward merge (when the target branch hasn't diverged), it will, just moving the pointer forward. No merge commit.
 
 ```
 Fast-forward (default):
@@ -22,7 +22,7 @@ A ← B ← C ← D ← M  (develop)
 
 The `--no-ff` flag forces Git to create a merge commit even when fast-forward is possible. Why bother?
 
-**Traceability.** The merge commit records that a feature branch existed and when it was integrated. Without it, the feature commits just blend into the develop history , you can't tell where a feature started and ended.
+**Traceability.** The merge commit records that a feature branch existed and when it was integrated. Without it, the feature commits just blend into the develop history, you can't tell where a feature started and ended.
 
 **Reversibility.** If a feature turns out to be broken, you can revert the single merge commit to undo the entire feature. With fast-forward, you'd have to revert each individual commit.
 

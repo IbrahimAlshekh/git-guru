@@ -2,7 +2,7 @@
 
 ## The Scenario
 
-Two team members edited the **same section** of the handbook at the same time. One updated the standup meeting time. The other rewrote the meeting guidelines entirely. When you try to merge, Git can't decide which version wins. That's a **conflict** , and it's your job to resolve it.
+Two team members edited the **same section** of the handbook at the same time. One updated the standup meeting time. The other rewrote the meeting guidelines entirely. When you try to merge, Git can't decide which version wins. That's a **conflict**, and it's your job to resolve it.
 
 This is the task most beginners fear. By the end of it, you won't.
 
@@ -10,7 +10,7 @@ This is the task most beginners fear. By the end of it, you won't.
 
 ## What to Do
 
-### Step 1 , Create the First Branch
+### Step 1, Create the First Branch
 
 ```bash
 git switch main
@@ -23,7 +23,7 @@ Open `README.md` and find the Meetings section under Communication Guidelines. C
 ### Meetings
 - Daily standup: 9:30 AM, 15 minutes maximum
 - All meetings must have an agenda shared at least 1 hour in advance
-- No meeting Wednesdays , this is focus time
+- No meeting Wednesdays, this is focus time
 ```
 
 (You changed 9:15 to 9:30)
@@ -35,9 +35,9 @@ git add README.md
 git commit -m "Update standup time to 9:30 AM"
 ```
 
-### Step 2 , Create the Second Branch (From Main)
+### Step 2, Create the Second Branch (From Main)
 
-Switch back to `main` , **not** from `update-meeting-time`:
+Switch back to `main`, **not** from `update-meeting-time`:
 
 ```bash
 git switch main
@@ -50,7 +50,7 @@ Now edit the *same* Meetings section with a completely different rewrite:
 ### Meetings
 - Daily sync: 10:00 AM (async standup on Slack before 9 AM)
 - Weekly team retro: Fridays 3:00 PM
-- All meetings require a shared agenda , no agenda, no meeting
+- All meetings require a shared agenda, no agenda, no meeting
 - Focus blocks: No meetings Tuesday and Thursday mornings
 ```
 
@@ -61,16 +61,16 @@ git add README.md
 git commit -m "Rewrite meeting guidelines with new format"
 ```
 
-### Step 3 , Merge the First Branch Into Main
+### Step 3, Merge the First Branch Into Main
 
 ```bash
 git switch main
 git merge update-meeting-time
 ```
 
-This works fine , fast-forward, no conflict.
+This works fine, fast-forward, no conflict.
 
-### Step 4 , Now Merge the Second Branch
+### Step 4, Now Merge the Second Branch
 
 ```bash
 git merge rewrite-meetings
@@ -86,7 +86,7 @@ git status
 
 It tells you which files have conflicts.
 
-### Step 5 , Look at the Conflict
+### Step 5, Look at the Conflict
 
 Open `README.md` in your editor. Find the conflict markers:
 
@@ -94,34 +94,34 @@ Open `README.md` in your editor. Find the conflict markers:
 <<<<<<< HEAD
 - Daily standup: 9:30 AM, 15 minutes maximum
 - All meetings must have an agenda shared at least 1 hour in advance
-- No meeting Wednesdays , this is focus time
+- No meeting Wednesdays, this is focus time
 =======
 - Daily sync: 10:00 AM (async standup on Slack before 9 AM)
 - Weekly team retro: Fridays 3:00 PM
-- All meetings require a shared agenda , no agenda, no meeting
+- All meetings require a shared agenda, no agenda, no meeting
 - Focus blocks: No meetings Tuesday and Thursday mornings
 >>>>>>> rewrite-meetings
 ```
 
 > 📖 **Stop and read** [THEORY.md](THEORY.md) **, Section 1: Anatomy of a Conflict**
 
-### Step 6 , Resolve the Conflict
+### Step 6, Resolve the Conflict
 
 You need to **manually edit the file** to contain what you actually want. Remove the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) and write the final version.
 
-For this exercise, combine the best of both , use the new format but keep the updated time:
+For this exercise, combine the best of both, use the new format but keep the updated time:
 
 ```
 ### Meetings
 - Daily sync: 9:30 AM (async standup on Slack before 9 AM)
 - Weekly team retro: Fridays 3:00 PM
-- All meetings require a shared agenda , no agenda, no meeting
+- All meetings require a shared agenda, no agenda, no meeting
 - Focus blocks: No meetings Tuesday and Thursday mornings
 ```
 
 Save the file.
 
-### Step 7 , Complete the Merge
+### Step 7, Complete the Merge
 
 ```bash
 # Mark the file as resolved
@@ -133,7 +133,7 @@ git commit
 
 Git will provide a default merge commit message. Accept it.
 
-### Step 8 , Clean Up
+### Step 8, Clean Up
 
 ```bash
 git branch -d update-meeting-time
@@ -162,10 +162,10 @@ grep "<<<" README.md
 
 ## What You Just Learned
 
-- Conflicts happen when two branches edit the same lines , this is **normal**
-- Git marks conflicts with `<<<<<<<`, `=======`, `>>>>>>>` , you choose what stays
+- Conflicts happen when two branches edit the same lines, this is **normal**
+- Git marks conflicts with `<<<<<<<`, `=======`, `>>>>>>>`, you choose what stays
 - After resolving, `git add` marks the file resolved, `git commit` finishes the merge
-- Conflicts are not errors , they're Git asking for your judgment
+- Conflicts are not errors, they're Git asking for your judgment
 - `git branch -d` deletes branches that have been merged
 
 ---

@@ -39,8 +39,8 @@ develop  ──●──●──●──●──●──M──  (gets the b
 release/v1.0.0          ●──●──●
 ```
 
-1. **Into `main`** , because main represents production
-2. **Back into `develop`** , so bug fixes from the release aren't lost
+1. **Into `main`**, because main represents production
+2. **Back into `develop`**, so bug fixes from the release aren't lost
 
 Then the release branch is deleted. Its purpose is served.
 
@@ -52,4 +52,4 @@ Imagine a release branch fixes a typo. If you only merge to `main`, develop stil
 
 Tags are like branches that never move. `v1.0.0` will always point to the exact commit that was released. Unlike branches, tags don't advance when new commits are made. They're permanent bookmarks in history.
 
-Use annotated tags (`-a` flag) for releases , they store the tagger's name, date, and a message. Lightweight tags (no `-a`) are just pointers , fine for personal bookmarks but not for releases.
+Use annotated tags (`-a` flag) for releases, they store the tagger's name, date, and a message. Lightweight tags (no `-a`) are just pointers, fine for personal bookmarks but not for releases.

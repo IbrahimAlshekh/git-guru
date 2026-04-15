@@ -2,7 +2,7 @@
 
 ## The Scenario
 
-Your team's handbook has grown. Other teams want to use it, but they need **stable, versioned releases** , not a `main` branch that changes daily. The manager says: "We need a proper release process. Use Gitflow."
+Your team's handbook has grown. Other teams want to use it, but they need **stable, versioned releases**, not a `main` branch that changes daily. The manager says: "We need a proper release process. Use Gitflow."
 
 Before jumping in, you need to understand what Gitflow is, set it up, and see how it differs from the GitHub Flow you've been using.
 
@@ -10,13 +10,13 @@ Before jumping in, you need to understand what Gitflow is, set it up, and see ho
 
 ## What to Do
 
-### Step 1 , Understand the Context
+### Step 1, Understand the Context
 
-> 📖 **Read** [THEORY.md](THEORY.md) **, Section 1: Why Gitflow Exists** before doing anything. This is one of the few tasks where theory comes first, because Gitflow is a convention , you need to understand the *why* before the *how* makes sense.
+> 📖 **Read** [THEORY.md](THEORY.md) **, Section 1: Why Gitflow Exists** before doing anything. This is one of the few tasks where theory comes first, because Gitflow is a convention, you need to understand the *why* before the *how* makes sense.
 
-### Step 2 , Create the Develop Branch
+### Step 2, Create the Develop Branch
 
-In Gitflow, `main` represents production , the last released version. All ongoing work happens on `develop`.
+In Gitflow, `main` represents production, the last released version. All ongoing work happens on `develop`.
 
 ```bash
 git switch main
@@ -30,7 +30,7 @@ git switch -c develop
 git push -u origin develop
 ```
 
-### Step 3 , Document the Gitflow Setup
+### Step 3, Document the Gitflow Setup
 
 Open `GIT_WORKFLOW.md` and replace the entire content with an expanded version:
 
@@ -68,7 +68,7 @@ We use the Gitflow branching model. Here's how it works.
 2. All work starts as a `feature/*` branch from `develop`
 3. Features merge back to `develop` via Pull Request
 4. When `develop` is ready for release, create a `release/*` branch
-5. Only bug fixes go into a release branch , no new features
+5. Only bug fixes go into a release branch, no new features
 6. Hotfixes are the only branches created from `main`
 7. After merging a release or hotfix, tag `main` with a version number
 
@@ -96,7 +96,7 @@ The first line should be under 50 characters. Add detail in the body if needed.
 4. Open a Pull Request with a clear description of what and why
 5. Request review from at least one teammate
 6. Address review feedback
-7. Merge after approval , delete the branch after merging
+7. Merge after approval, delete the branch after merging
 ```
 
 ```bash
@@ -105,7 +105,7 @@ git commit -m "Update workflow docs with Gitflow branching model"
 git push
 ```
 
-### Step 4 , Verify the Branch Structure
+### Step 4, Verify the Branch Structure
 
 ```bash
 git branch -a
@@ -148,8 +148,8 @@ git branch -a | grep origin
 - Gitflow uses two long-lived branches: `main` (production) and `develop` (integration)
 - All new work branches from `develop`, not from `main`
 - `main` is touched only by releases and hotfixes
-- Gitflow is a **convention** , Git doesn't enforce it; your team does
-- It trades simplicity for structure , useful when you need versioned releases
+- Gitflow is a **convention**, Git doesn't enforce it; your team does
+- It trades simplicity for structure, useful when you need versioned releases
 
 ---
 

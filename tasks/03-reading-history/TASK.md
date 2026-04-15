@@ -8,7 +8,7 @@ A new team member just joined. Before they start contributing, they want to unde
 
 ## What to Do
 
-### Step 1 , Add a New File
+### Step 1, Add a New File
 
 Create a new file called `CODE_OF_CONDUCT.md` in the `handbook/` directory:
 
@@ -38,7 +38,7 @@ Team leads are responsible for clarifying standards and are expected to take app
 
 ## Scope
 
-This code of conduct applies to all project spaces , repository, chat, meetings, and any other team forums.
+This code of conduct applies to all project spaces, repository, chat, meetings, and any other team forums.
 ```
 
 Stage and commit:
@@ -48,7 +48,7 @@ git add CODE_OF_CONDUCT.md
 git commit -m "Add code of conduct"
 ```
 
-### Step 2 , Explore the Log
+### Step 2, Explore the Log
 
 Now try each of these commands and read the output carefully:
 
@@ -71,7 +71,7 @@ git log -2
 
 > 📖 **Stop and read** [THEORY.md](THEORY.md) **, Section 1: The Commit Graph**
 
-### Step 3 , Inspect a Specific Commit
+### Step 3, Inspect a Specific Commit
 
 From `git log --oneline`, pick the hash of your second commit (the "Add communication guidelines" one). Run:
 
@@ -79,7 +79,7 @@ From `git log --oneline`, pick the hash of your second commit (the "Add communic
 git show <paste-the-hash-here>
 ```
 
-This shows you exactly what that commit did , who made it, when, and every line changed.
+This shows you exactly what that commit did, who made it, when, and every line changed.
 
 Now try:
 
@@ -91,12 +91,12 @@ git show --stat <hash>
 git show <hash>:README.md
 ```
 
-### Step 4 , Update the README Links
+### Step 4, Update the README Links
 
 Now update `README.md` to link to the new file. Add this line in the "What's Inside" section:
 
 ```
-- [Code of Conduct](CODE_OF_CONDUCT.md) , Team behavior standards
+- [Code of Conduct](CODE_OF_CONDUCT.md), Team behavior standards
 ```
 
 Commit this change:
@@ -106,7 +106,7 @@ git add README.md
 git commit -m "Add code of conduct link to README table of contents"
 ```
 
-### Step 5 , View the Full Graph
+### Step 5, View the Full Graph
 
 ```bash
 git log --oneline --graph --all
@@ -130,10 +130,10 @@ git ls-files
 
 ## What You Just Learned
 
-- `git log` has many formats , use `--oneline` daily, `--stat` to see scope, `-p` for detail
+- `git log` has many formats, use `--oneline` daily, `--stat` to see scope, `-p` for detail
 - `git show <hash>` lets you inspect any specific commit
 - `git show <hash>:<file>` lets you see any file at any point in history
-- Every commit has a unique hash , this is how Git identifies everything
+- Every commit has a unique hash, this is how Git identifies everything
 
 ---
 

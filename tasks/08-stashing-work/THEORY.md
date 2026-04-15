@@ -4,7 +4,7 @@
 
 ## Section 1: The Stash
 
-The stash is a special storage area in Git , think of it as a stack of temporary snapshots that live outside the normal commit history.
+The stash is a special storage area in Git, think of it as a stack of temporary snapshots that live outside the normal commit history.
 
 When you run `git stash`, Git:
 
@@ -41,15 +41,15 @@ Useful commands:
 
 ### When NOT to Use Stash
 
-Stash is for short interruptions , minutes to hours. If you stash something and forget about it for a week, you'll have trouble remembering what it was. For longer-term "not ready yet" work, just commit it on a branch with a message like "WIP: half-done onboarding guide." A WIP commit on a branch is better than a forgotten stash.
+Stash is for short interruptions, minutes to hours. If you stash something and forget about it for a week, you'll have trouble remembering what it was. For longer-term "not ready yet" work, just commit it on a branch with a message like "WIP: half-done onboarding guide." A WIP commit on a branch is better than a forgotten stash.
 
 ### Stash Can Conflict Too
 
-If the code changed while your work was stashed, `git stash pop` might produce a conflict , just like a merge. Resolve it the same way: edit the file, remove markers, `git add`.
+If the code changed while your work was stashed, `git stash pop` might produce a conflict, just like a merge. Resolve it the same way: edit the file, remove markers, `git add`.
 
 ---
 
-## Tier 1 Complete , What You Know Now
+## Tier 1 Complete, What You Know Now
 
 You've finished the solo tier. Here's what you can do:
 
@@ -59,4 +59,4 @@ You've finished the solo tier. Here's what you can do:
 - Undo mistakes with amend, reset, and revert
 - Stash work temporarily
 
-This covers about 90% of daily Git usage for a solo developer. Tier 2 adds the collaboration layer , pushing, pulling, and working with others.
+This covers about 90% of daily Git usage for a solo developer. Tier 2 adds the collaboration layer, pushing, pulling, and working with others.

@@ -2,13 +2,13 @@
 
 ## The Scenario
 
-You've been working on a documentation improvements branch for a couple of days. Meanwhile, the team merged other changes into `main`. Your branch is now "behind." Before merging your work, you want to bring it up to date , but instead of a merge commit that clutters the history, you'll use **rebase** to replay your commits on top of the latest `main`.
+You've been working on a documentation improvements branch for a couple of days. Meanwhile, the team merged other changes into `main`. Your branch is now "behind." Before merging your work, you want to bring it up to date, but instead of a merge commit that clutters the history, you'll use **rebase** to replay your commits on top of the latest `main`.
 
 ---
 
 ## What to Do
 
-### Step 1 , Set Up the Divergence
+### Step 1, Set Up the Divergence
 
 Make sure you're on `main` and up to date:
 
@@ -42,7 +42,7 @@ git add README.md
 git commit -m "Add Git quick reference table to README"
 ```
 
-Now add one more commit on this branch , update `ONBOARDING.md` to mention the quick reference:
+Now add one more commit on this branch, update `ONBOARDING.md` to mention the quick reference:
 
 Open `ONBOARDING.md` and add to the Day 1 list:
 
@@ -55,7 +55,7 @@ git add ONBOARDING.md
 git commit -m "Reference quick reference table in onboarding guide"
 ```
 
-### Step 2 , Simulate Changes on Main
+### Step 2, Simulate Changes on Main
 
 Switch to `main` and add a commit (simulating a teammate's merged PR):
 
@@ -76,7 +76,7 @@ git add CHANGELOG.md
 git commit -m "Update changelog with recent additions"
 ```
 
-### Step 3 , See the Divergence
+### Step 3, See the Divergence
 
 ```bash
 git log --oneline --graph --all
@@ -84,7 +84,7 @@ git log --oneline --graph --all
 
 Both `main` and `docs/improve-readme` have commits the other doesn't. If you merged now, you'd get a merge commit. Instead, let's rebase.
 
-### Step 4 , Rebase
+### Step 4, Rebase
 
 ```bash
 git switch docs/improve-readme
@@ -101,26 +101,26 @@ git log --oneline --graph --all
 
 Your two commits are now sitting *on top of* the latest main commit. The history is a straight line. No merge commit.
 
-### Step 5 , Merge (Fast-Forward)
+### Step 5, Merge (Fast-Forward)
 
 ```bash
 git switch main
 git merge docs/improve-readme
 ```
 
-Because you rebased, this is a fast-forward merge , clean and linear.
+Because you rebased, this is a fast-forward merge, clean and linear.
 
 ```bash
 git branch -d docs/improve-readme
 ```
 
-### Step 6 , Push
+### Step 6, Push
 
 ```bash
 git push
 ```
 
-### Step 7 , Interactive Rebase (Bonus)
+### Step 7, Interactive Rebase (Bonus)
 
 Let's try one more thing. Create a branch and make some messy commits:
 
@@ -189,7 +189,7 @@ git push
 ## Verify
 
 ```bash
-# History should be linear , no merge diamonds for recent work
+# History should be linear, no merge diamonds for recent work
 git log --oneline --graph -10
 
 # README has the quick reference
@@ -204,13 +204,13 @@ git log --oneline | grep "Fix typos"
 ## What You Just Learned
 
 - `git rebase main` replays your branch commits on top of the latest main
-- Rebase produces linear history , cleaner than merge commits for small branches
+- Rebase produces linear history, cleaner than merge commits for small branches
 - `git rebase -i HEAD~N` lets you squash, reorder, or edit recent commits
-- **Golden rule:** never rebase commits that have been pushed and shared. Rebase rewrites history , if others have those commits, you'll cause conflicts.
+- **Golden rule:** never rebase commits that have been pushed and shared. Rebase rewrites history, if others have those commits, you'll cause conflicts.
 - Rebase vs merge is a team decision, not a right/wrong question
 
 ---
 
-**Congratulations , you've completed Tier 2!** You can now collaborate with a team using Git.
+**Congratulations, you've completed Tier 2!** You can now collaborate with a team using Git.
 
 → Next: [Task 12: Gitflow Introduction](../12-gitflow-intro/TASK.md) (Tier 3: Gitflow)

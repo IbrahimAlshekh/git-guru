@@ -2,7 +2,7 @@
 
 ## The Scenario
 
-You just wrote something wrong, committed it, and now you need to fix it. But "fix it" can mean different things depending on the situation. Git gives you several tools , and picking the right one matters.
+You just wrote something wrong, committed it, and now you need to fix it. But "fix it" can mean different things depending on the situation. Git gives you several tools, and picking the right one matters.
 
 This task walks you through three real scenarios with three different undo strategies.
 
@@ -10,7 +10,7 @@ This task walks you through three real scenarios with three different undo strat
 
 ## What to Do
 
-### Scenario A , Fix the Last Commit (Amend)
+### Scenario A, Fix the Last Commit (Amend)
 
 You need to add a changelog to the handbook. Create `CHANGELOG.md`:
 
@@ -27,7 +27,7 @@ You need to add a changelog to the handbook. Create `CHANGELOG.md`:
 - Testing guidelines
 ```
 
-Commit it , but "accidentally" with a typo in the message:
+Commit it, but "accidentally" with a typo in the message:
 
 ```bash
 git add CHANGELOG.md
@@ -46,7 +46,7 @@ Check:
 git log --oneline -1
 ```
 
-The typo is gone. The old commit was *replaced* , same changes, corrected message, new hash.
+The typo is gone. The old commit was *replaced*, same changes, corrected message, new hash.
 
 Now open `CHANGELOG.md` and add a line you forgot:
 
@@ -67,7 +67,7 @@ git commit --amend --no-edit
 
 ---
 
-### Scenario B , Unstage and Undo Working Changes (Reset)
+### Scenario B, Unstage and Undo Working Changes (Reset)
 
 Add something you shouldn't. Open `README.md` and add at the very end:
 
@@ -82,7 +82,7 @@ Stage it:
 git add README.md
 ```
 
-Wait , you don't want that committed. **Unstage** the file:
+Wait, you don't want that committed. **Unstage** the file:
 
 ```bash
 git reset HEAD README.md
@@ -90,7 +90,7 @@ git reset HEAD README.md
 
 The file is still modified (check `git status`), but it's no longer staged.
 
-Now discard the change entirely , go back to the last committed version:
+Now discard the change entirely, go back to the last committed version:
 
 ```bash
 git checkout -- README.md
@@ -109,7 +109,7 @@ Clean. The secret notes are gone.
 
 ---
 
-### Scenario C , Undo a Commit That's Already Shared (Revert)
+### Scenario C, Undo a Commit That's Already Shared (Revert)
 
 Simulate a bad commit. Open `CODING_STANDARDS.md` and replace the "General Principles" section with:
 
@@ -128,7 +128,7 @@ git add CODING_STANDARDS.md
 git commit -m "Update coding principles"
 ```
 
-You realize this is wrong and needs to be undone. But imagine this commit was already pushed to a shared repository , you can't just delete it. Instead, **revert** it:
+You realize this is wrong and needs to be undone. But imagine this commit was already pushed to a shared repository, you can't just delete it. Instead, **revert** it:
 
 ```bash
 git revert HEAD
@@ -170,10 +170,10 @@ git log --oneline -4
 
 ## What You Just Learned
 
-- **`git commit --amend`** , rewrites the last commit (message or content). Only for unpushed commits.
-- **`git reset HEAD <file>`** , unstages a file without losing changes
-- **`git checkout -- <file>`** / **`git restore <file>`** , discards working directory changes
-- **`git revert <commit>`** , creates a new commit that undoes a previous one. Safe for shared history.
+- **`git commit --amend`**, rewrites the last commit (message or content). Only for unpushed commits.
+- **`git reset HEAD <file>`**, unstages a file without losing changes
+- **`git checkout -- <file>`** / **`git restore <file>`**, discards working directory changes
+- **`git revert <commit>`**, creates a new commit that undoes a previous one. Safe for shared history.
 - **Golden rule:** If the commit has been pushed/shared, use `revert`. If it's still local, `amend` or `reset` are fine.
 
 ---

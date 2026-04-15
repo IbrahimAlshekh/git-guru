@@ -1,6 +1,6 @@
 # Solutions Reference
 
-If you're stuck on a task, this file describes what your repository should look like **after completing** each task. Use it to verify your work or get unstuck , not to skip ahead.
+If you're stuck on a task, this file describes what your repository should look like **after completing** each task. Use it to verify your work or get unstuck, not to skip ahead.
 
 ---
 
@@ -149,16 +149,16 @@ Check:
 **Branches:** `main`, `develop`
 
 **Files in the handbook:**
-1. `README.md` , Main page with table of contents
-2. `CODE_OF_CONDUCT.md` , Team behavior standards
-3. `CODING_STANDARDS.md` , Code style and practices
-4. `TESTING.md` , Testing philosophy and guidelines
-5. `CHANGELOG.md` , Version history
-6. `ONBOARDING.md` , New team member guide
-7. `GIT_WORKFLOW.md` , Git and Gitflow process documentation
-8. `SECURITY.md` , Security guidelines (with hotfix applied)
-9. `TROUBLESHOOTING.md` , Common problems and solutions
-10. `GLOSSARY.md` , Key terms and definitions
+1. `README.md`, Main page with table of contents
+2. `CODE_OF_CONDUCT.md`, Team behavior standards
+3. `CODING_STANDARDS.md`, Code style and practices
+4. `TESTING.md`, Testing philosophy and guidelines
+5. `CHANGELOG.md`, Version history
+6. `ONBOARDING.md`, New team member guide
+7. `GIT_WORKFLOW.md`, Git and Gitflow process documentation
+8. `SECURITY.md`, Security guidelines (with hotfix applied)
+9. `TROUBLESHOOTING.md`, Common problems and solutions
+10. `GLOSSARY.md`, Key terms and definitions
 
 Check:
 - Both tags exist: `git tag --list`

@@ -2,13 +2,13 @@
 
 ## The Scenario
 
-Two features need to be built for the next release of the handbook: a Troubleshooting Guide and a Glossary. You'll work on both using proper Gitflow feature branches , branching from `develop` and merging back to `develop`.
+Two features need to be built for the next release of the handbook: a Troubleshooting Guide and a Glossary. You'll work on both using proper Gitflow feature branches, branching from `develop` and merging back to `develop`.
 
 ---
 
 ## What to Do
 
-### Step 1 , Start the First Feature
+### Step 1, Start the First Feature
 
 Make sure you're on `develop` and up to date:
 
@@ -66,7 +66,7 @@ git commit -m "Add troubleshooting guide with common Git issues"
 Add a link in `README.md` under "What's Inside":
 
 ```
-- [Troubleshooting](TROUBLESHOOTING.md) , Common problems and solutions
+- [Troubleshooting](TROUBLESHOOTING.md), Common problems and solutions
 ```
 
 ```bash
@@ -80,9 +80,9 @@ Push the feature branch:
 git push -u origin feature/troubleshooting-guide
 ```
 
-### Step 2 , Start the Second Feature (In Parallel)
+### Step 2, Start the Second Feature (In Parallel)
 
-Switch back to `develop` , not from the first feature branch:
+Switch back to `develop`, not from the first feature branch:
 
 ```bash
 git switch develop
@@ -100,15 +100,15 @@ Key terms used in this handbook and in daily development work.
 
 | Term | Definition |
 |------|-----------|
-| **Repository (repo)** | A project tracked by Git , contains all files and their full history |
+| **Repository (repo)** | A project tracked by Git, contains all files and their full history |
 | **Commit** | A snapshot of your project at a point in time |
-| **Branch** | A movable pointer to a commit , represents an independent line of work |
+| **Branch** | A movable pointer to a commit, represents an independent line of work |
 | **HEAD** | A pointer to the branch (or commit) you're currently on |
 | **Staging area (index)** | A draft of what will go into your next commit |
 | **Remote** | A copy of the repository on another server (e.g., GitHub) |
 | **Clone** | Downloading a full copy of a remote repository |
 | **Fork** | A personal copy of someone else's repository on GitHub |
-| **Pull Request (PR)** | A request to merge a branch , includes review and discussion |
+| **Pull Request (PR)** | A request to merge a branch, includes review and discussion |
 | **Merge** | Combining two branches into one |
 | **Rebase** | Replaying commits from one branch onto another |
 | **Conflict** | When two branches edit the same lines and Git can't auto-merge |
@@ -119,10 +119,10 @@ Key terms used in this handbook and in daily development work.
 
 | Term | Definition |
 |------|-----------|
-| **main** | The branch representing production , only released code lives here |
+| **main** | The branch representing production, only released code lives here |
 | **develop** | The integration branch where features are combined before release |
 | **Feature branch** | A short-lived branch for developing a single feature |
-| **Release branch** | A branch for stabilizing a release , no new features, only fixes |
+| **Release branch** | A branch for stabilizing a release, no new features, only fixes |
 | **Hotfix branch** | An emergency fix branch created from main |
 ```
 
@@ -132,7 +132,7 @@ git commit -m "Add glossary of Git and Gitflow terms"
 git push -u origin feature/glossary
 ```
 
-### Step 3 , Merge Features Into Develop
+### Step 3, Merge Features Into Develop
 
 In a real team, you'd do this through Pull Requests on GitHub. For this exercise, do it locally:
 
@@ -157,7 +157,7 @@ git merge --no-ff feature/glossary -m "Merge feature/glossary into develop"
 Add the glossary link to `README.md`:
 
 ```
-- [Glossary](GLOSSARY.md) , Key terms and definitions
+- [Glossary](GLOSSARY.md), Key terms and definitions
 ```
 
 ```bash
@@ -171,7 +171,7 @@ Push develop:
 git push
 ```
 
-### Step 4 , Clean Up
+### Step 4, Clean Up
 
 ```bash
 git branch -d feature/troubleshooting-guide
@@ -194,7 +194,7 @@ ls TROUBLESHOOTING.md GLOSSARY.md
 # History shows merge commits from features
 git log --oneline --graph -8
 
-# Main is untouched , still behind develop
+# Main is untouched, still behind develop
 git log main --oneline -1
 git log develop --oneline -1
 ```
@@ -204,10 +204,10 @@ git log develop --oneline -1
 ## What You Just Learned
 
 - Feature branches start from `develop` and merge back to `develop`
-- `--no-ff` forces a merge commit even when fast-forward is possible , this preserves the branch record
+- `--no-ff` forces a merge commit even when fast-forward is possible, this preserves the branch record
 - Multiple features can be developed in parallel on separate branches
 - Features never touch `main` directly
-- Clean up branches after merging , both locally and on the remote
+- Clean up branches after merging, both locally and on the remote
 
 ---
 

@@ -17,7 +17,7 @@ index 3a4c5d6..7b8e9f0 100644
 -This handbook will contain:
 -- Coding standards and style guides
 -- Team workflows and processes
-+- [Communication Guidelines](#communication-guidelines) , How we communicate
++- [Communication Guidelines](#communication-guidelines), How we communicate
 +- Coding Standards (coming soon)
 +- Git Workflow (coming soon)
 ```
@@ -28,7 +28,7 @@ Line by line:
 - `@@` shows *where* in the file the change is (line numbers)
 - Lines starting with `-` were **removed** (old version)
 - Lines starting with `+` were **added** (new version)
-- Lines with no prefix are **context** , unchanged lines shown for reference
+- Lines with no prefix are **context**, unchanged lines shown for reference
 
 The key insight: **`git diff` compares two states**. Which two states depends on how you call it:
 

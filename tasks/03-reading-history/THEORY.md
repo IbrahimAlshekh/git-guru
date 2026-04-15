@@ -4,7 +4,7 @@
 
 ## Section 1: The Commit Graph
 
-Every commit points to its parent , the commit that came before it. This creates a chain:
+Every commit points to its parent, the commit that came before it. This creates a chain:
 
 ```
 A ← B ← C ← D  (main)
@@ -16,9 +16,9 @@ Right now, your history is a straight line. Commit D (your most recent) points b
 
 Two important pointers:
 
-**`main`** (or `master`) , This is a branch. A branch is just a pointer to a commit. Right now, `main` points to your latest commit, D.
+**`main`** (or `master`), This is a branch. A branch is just a pointer to a commit. Right now, `main` points to your latest commit, D.
 
-**`HEAD`** , This is "where you are right now." It usually points to a branch name (like `main`), which in turn points to a commit. When you make a new commit, the branch pointer moves forward, and HEAD follows.
+**`HEAD`**, This is "where you are right now." It usually points to a branch name (like `main`), which in turn points to a commit. When you make a new commit, the branch pointer moves forward, and HEAD follows.
 
 ```
 A ← B ← C ← D
@@ -38,9 +38,9 @@ A ← B ← C ← D ← E
                   HEAD
 ```
 
-Both `main` and `HEAD` moved forward. The old commits didn't change , E simply joined the chain.
+Both `main` and `HEAD` moved forward. The old commits didn't change, E simply joined the chain.
 
-In the next task, you'll create a second branch. That's when the graph stops being a straight line , and that's when Git gets interesting.
+In the next task, you'll create a second branch. That's when the graph stops being a straight line, and that's when Git gets interesting.
 
 ---
 

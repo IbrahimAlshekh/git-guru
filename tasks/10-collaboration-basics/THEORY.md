@@ -23,19 +23,19 @@ That's it. No `develop` branch, no release branches, no version numbers. Just `m
 
 ### Why Pull Requests?
 
-A Pull Request (PR) is not a Git feature , it's a GitHub feature (other platforms call them Merge Requests). It's a way to say: "I'd like to merge this branch into main. Can someone review it first?"
+A Pull Request (PR) is not a Git feature, it's a GitHub feature (other platforms call them Merge Requests). It's a way to say: "I'd like to merge this branch into main. Can someone review it first?"
 
 PRs provide:
-- **Code review** , someone else reads your changes before they go live
-- **Discussion** , a place to ask questions and suggest improvements
-- **CI/CD integration** , automated tests can run on every PR
-- **History** , a record of *why* a change was made, not just *what*
+- **Code review**, someone else reads your changes before they go live
+- **Discussion**, a place to ask questions and suggest improvements
+- **CI/CD integration**, automated tests can run on every PR
+- **History**, a record of *why* a change was made, not just *what*
 
 ### When GitHub Flow Works
 
-GitHub Flow is great for teams that deploy continuously , web apps, SaaS products, anything where you ship often. It's simple, fast, and has low ceremony.
+GitHub Flow is great for teams that deploy continuously, web apps, SaaS products, anything where you ship often. It's simple, fast, and has low ceremony.
 
-It's less ideal for projects that need to maintain multiple versions simultaneously (e.g., a library that supports v1 and v2) or projects with complex release schedules. That's where Gitflow comes in , Tier 3.
+It's less ideal for projects that need to maintain multiple versions simultaneously (e.g., a library that supports v1 and v2) or projects with complex release schedules. That's where Gitflow comes in, Tier 3.
 
 ---
 
@@ -55,4 +55,4 @@ git pull
 git push
 ```
 
-This is normal. It's not an error , it's Git preventing you from overwriting someone else's work.
+This is normal. It's not an error, it's Git preventing you from overwriting someone else's work.

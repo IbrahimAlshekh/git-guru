@@ -39,7 +39,7 @@ After merge (fast-forward):
 A ← B ← C ← F ← D' ← E'  (main, feature)
 ```
 
-Rebase takes your commits (D and E), detaches them, moves the branch to the tip of main (F), and **replays** your commits one by one on top. The result is D' and E' , they have the same changes as D and E, but different hashes because they have a different parent.
+Rebase takes your commits (D and E), detaches them, moves the branch to the tip of main (F), and **replays** your commits one by one on top. The result is D' and E', they have the same changes as D and E, but different hashes because they have a different parent.
 
 The history becomes linear. It looks like you wrote D and E *after* F, even though you didn't.
 
@@ -54,8 +54,8 @@ Rebase local, unpushed commits freely. Never rebase commits others are building 
 | Situation | Recommended |
 |-----------|-------------|
 | Small feature branch, 1-3 commits | Rebase onto main, then fast-forward merge |
-| Long-running branch with many contributors | Merge , preserving the branch history has value |
+| Long-running branch with many contributors | Merge, preserving the branch history has value |
 | Cleaning up your own messy commits | Interactive rebase (`rebase -i`) |
-| Shared branches (develop, main) | Never rebase , always merge |
+| Shared branches (develop, main) | Never rebase, always merge |
 
 Many teams use a hybrid: rebase your local feature branch to keep it up-to-date, then merge (with `--no-ff`) to main so the merge commit serves as a record that a feature was completed.

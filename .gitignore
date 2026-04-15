@@ -1,4 +1,4 @@
-# The handbook directory has its own Git repo , don't track it from the outer project
+# The handbook directory has its own Git repo, don't track it from the outer project
 handbook/.git/
 
 # OS files

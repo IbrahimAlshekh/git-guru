@@ -8,7 +8,7 @@ A remote is just a URL pointing to another copy of the repository. When you run 
 
 `origin` is a convention, not a requirement. You could call it `github` or `backup` or anything. But almost everyone calls the primary remote `origin`.
 
-Your local repo and the remote are **independent copies**. They don't automatically stay in sync. You explicitly push (send your commits) and pull (get their commits). This is deliberate , it means you can work offline, make commits, and sync up later.
+Your local repo and the remote are **independent copies**. They don't automatically stay in sync. You explicitly push (send your commits) and pull (get their commits). This is deliberate, it means you can work offline, make commits, and sync up later.
 
 The graph with a remote looks like this:
 
@@ -40,9 +40,9 @@ Now they match. `origin/main` moved forward because you told the remote about yo
 
 This distinction confuses many people, but it's simple once you see it.
 
-**`git fetch`** , Downloads new commits from the remote and updates your remote tracking branches (`origin/main`). Does NOT touch your local branches or working directory. It's a safe "let me see what's new" operation. You can fetch at any time without risk.
+**`git fetch`**, Downloads new commits from the remote and updates your remote tracking branches (`origin/main`). Does NOT touch your local branches or working directory. It's a safe "let me see what's new" operation. You can fetch at any time without risk.
 
-**`git pull`** , Does a `fetch` AND then merges the remote changes into your current branch. It's a convenience shortcut: `git pull` = `git fetch` + `git merge origin/main`.
+**`git pull`**, Does a `fetch` AND then merges the remote changes into your current branch. It's a convenience shortcut: `git pull` = `git fetch` + `git merge origin/main`.
 
 Why would you ever use `fetch` instead of `pull`? Because sometimes you want to *look* before you *merge*. After fetching:
 
@@ -54,4 +54,4 @@ git log main..origin/main --oneline
 git diff main origin/main
 ```
 
-This lets you review before deciding to merge. In practice, most people just `pull` for simple workflows. But knowing that `fetch` exists , and that it's safe , is important when things get complicated.
+This lets you review before deciding to merge. In practice, most people just `pull` for simple workflows. But knowing that `fetch` exists, and that it's safe, is important when things get complicated.

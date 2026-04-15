@@ -2,7 +2,7 @@
 
 ## The Scenario
 
-You're halfway through writing an onboarding guide when an urgent message comes in: "There's a typo on the main page , can you fix it right now?" You can't switch branches with uncommitted work (well, sometimes you can, but it's messy). You don't want to commit half-finished work either.
+You're halfway through writing an onboarding guide when an urgent message comes in: "There's a typo on the main page, can you fix it right now?" You can't switch branches with uncommitted work (well, sometimes you can, but it's messy). You don't want to commit half-finished work either.
 
 Solution: **stash** it.
 
@@ -10,7 +10,7 @@ Solution: **stash** it.
 
 ## What to Do
 
-### Step 1 , Start Work on a Branch
+### Step 1, Start Work on a Branch
 
 ```bash
 git switch main
@@ -42,16 +42,16 @@ git status
 
 You see `ONBOARDING.md` as untracked.
 
-### Step 2 , Stage It (But Don't Commit)
+### Step 2, Stage It (But Don't Commit)
 
 ```bash
 git add ONBOARDING.md
 git status
 ```
 
-It's staged , but halfway done. Now you need to switch to `main` for that urgent fix.
+It's staged, but halfway done. Now you need to switch to `main` for that urgent fix.
 
-### Step 3 , Stash
+### Step 3, Stash
 
 ```bash
 git stash
@@ -64,22 +64,22 @@ git status
 ls
 ```
 
-Clean. `ONBOARDING.md` is gone , it's on the stash. Now you can safely switch branches.
+Clean. `ONBOARDING.md` is gone, it's on the stash. Now you can safely switch branches.
 
-### Step 4 , Do the Urgent Fix
+### Step 4, Do the Urgent Fix
 
 ```bash
 git switch main
 ```
 
-Open `README.md`. Find the maintainer line at the bottom and fix a "typo" , change the date to today's actual date, or change "Last Updated" to "Last Reviewed."
+Open `README.md`. Find the maintainer line at the bottom and fix a "typo", change the date to today's actual date, or change "Last Updated" to "Last Reviewed."
 
 ```bash
 git add README.md
 git commit -m "Fix maintainer info on README"
 ```
 
-### Step 5 , Go Back and Restore Your Work
+### Step 5, Go Back and Restore Your Work
 
 ```bash
 git switch onboarding-guide
@@ -97,7 +97,7 @@ Your half-written onboarding guide is back, exactly as you left it.
 
 > 📖 **Stop and read** [THEORY.md](THEORY.md) **, Section 1: The Stash**
 
-### Step 6 , Finish and Commit
+### Step 6, Finish and Commit
 
 Add more content to `ONBOARDING.md`:
 
@@ -123,7 +123,7 @@ git add ONBOARDING.md
 git commit -m "Add onboarding guide"
 ```
 
-### Step 7 , Merge Back to Main
+### Step 7, Merge Back to Main
 
 ```bash
 git switch main
@@ -131,10 +131,10 @@ git merge onboarding-guide
 git branch -d onboarding-guide
 ```
 
-Update `README.md` , add to the "What's Inside" section:
+Update `README.md`, add to the "What's Inside" section:
 
 ```
-- [Onboarding Guide](ONBOARDING.md) , First week setup for new team members
+- [Onboarding Guide](ONBOARDING.md), First week setup for new team members
 ```
 
 ```bash
@@ -168,11 +168,11 @@ git log --oneline --graph -10
 - `git stash` saves uncommitted work and cleans your working directory
 - `git stash pop` restores the most recent stash
 - `git stash list` shows all stashes
-- Stash is perfect for "save my spot" moments , quick interruptions, branch switches
+- Stash is perfect for "save my spot" moments, quick interruptions, branch switches
 - It's a temporary shelf, not a long-term storage system
 
 ---
 
-**Congratulations , you've completed Tier 1!** You can now work solo with Git confidently.
+**Congratulations, you've completed Tier 1!** You can now work solo with Git confidently.
 
 → Next: [Task 09: Working with Remotes](../09-working-with-remotes/TASK.md) (Tier 2: Collaboration)

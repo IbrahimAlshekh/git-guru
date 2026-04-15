@@ -2,7 +2,7 @@
 
 ## The Scenario
 
-So far, your handbook lives only on your machine. The team can't see it, can't contribute, and if your laptop dies, it's gone. Time to put it on **GitHub** so the team can access it , and so you have a backup.
+So far, your handbook lives only on your machine. The team can't see it, can't contribute, and if your laptop dies, it's gone. Time to put it on **GitHub** so the team can access it, and so you have a backup.
 
 This is where Git becomes a collaboration tool.
 
@@ -21,18 +21,18 @@ This is where Git becomes a collaboration tool.
 
 ## What to Do
 
-### Step 1 , Create a GitHub Repository
+### Step 1, Create a GitHub Repository
 
 Go to [github.com/new](https://github.com/new) and create a new repository:
 
 - Name: `developer-handbook`
-- Description: "Team developer handbook , a learning project"
+- Description: "Team developer handbook, a learning project"
 - **Do NOT** initialize with a README, .gitignore, or license (you already have content)
 - Click "Create repository"
 
 GitHub will show you setup instructions. You need the commands under **"…or push an existing repository from the command line."**
 
-### Step 2 , Connect Your Local Repo to GitHub
+### Step 2, Connect Your Local Repo to GitHub
 
 In your `handbook/` directory:
 
@@ -52,23 +52,23 @@ You should see `origin` listed with your GitHub URL for both fetch and push.
 
 > 📖 **Stop and read** [THEORY.md](THEORY.md) **, Section 1: What Is a Remote?**
 
-### Step 3 , Push
+### Step 3, Push
 
 ```bash
 git push -u origin main
 ```
 
-(`-u` sets the upstream tracking , you only need it the first time)
+(`-u` sets the upstream tracking, you only need it the first time)
 
-Go to your GitHub repository page in the browser. Refresh. Your files are there , README, coding standards, everything.
+Go to your GitHub repository page in the browser. Refresh. Your files are there, README, coding standards, everything.
 
-### Step 4 , Understand What Happened
+### Step 4, Understand What Happened
 
 ```bash
 git log --oneline --all
 ```
 
-You'll see a new reference: `origin/main`. This is a **remote tracking branch** , it's Git's local memory of where `main` is on GitHub.
+You'll see a new reference: `origin/main`. This is a **remote tracking branch**, it's Git's local memory of where `main` is on GitHub.
 
 ```bash
 git branch -a
@@ -76,7 +76,7 @@ git branch -a
 
 This shows all branches: local and remote.
 
-### Step 5 , Simulate a Teammate's Change
+### Step 5, Simulate a Teammate's Change
 
 Go to the GitHub web interface. Click on `CODE_OF_CONDUCT.md`. Click the pencil icon (edit). Add a new section at the bottom:
 
@@ -90,7 +90,7 @@ Click "Commit changes" on GitHub. Write a commit message like "Add attribution t
 
 Now your GitHub repo has a commit that your local repo doesn't.
 
-### Step 6 , Fetch and Pull
+### Step 6, Fetch and Pull
 
 Back in your terminal:
 
@@ -120,7 +120,7 @@ The attribution section is there. Your local repo is now in sync with GitHub.
 
 > 📖 **Stop and read** [THEORY.md](THEORY.md) **, Section 2: Fetch vs Pull**
 
-### Step 7 , Make a Local Change and Push
+### Step 7, Make a Local Change and Push
 
 Add a new file `GIT_WORKFLOW.md`:
 
@@ -152,7 +152,7 @@ git commit -m "Add Git workflow guidelines"
 git push
 ```
 
-Check GitHub , your new file appears.
+Check GitHub, your new file appears.
 
 ---
 
@@ -177,8 +177,8 @@ ls
 - `git remote add` connects a local repo to a remote (like GitHub)
 - `git push` sends your commits to the remote
 - `git fetch` downloads remote changes without applying them
-- `git pull` = `fetch` + `merge` , downloads and applies
-- `origin/main` is a remote tracking branch , Git's bookmark for "where main is on the remote"
+- `git pull` = `fetch` + `merge`, downloads and applies
+- `origin/main` is a remote tracking branch, Git's bookmark for "where main is on the remote"
 - Push and pull keep local and remote in sync
 
 ---
