@@ -92,6 +92,47 @@ Wrap body lines at 72 characters. This keeps them readable in terminals and Git 
 
 ---
 
+## Section 3: Using Bullet Points in the Body
+
+Sometimes a commit covers more than one related change — a few fixes, a few additions that belong together. In that case, a bullet list in the body is cleaner than a paragraph.
+
+The structure is always the same: short subject line, blank line, then the list.
+
+```
+Update handbook structure and onboarding section
+
+- Add table of contents to README
+- Rewrite the onboarding steps for clarity
+- Remove outdated Windows-specific instructions
+- Fix broken link to the code of conduct
+```
+
+This works well when:
+- You made several small changes that are logically one "unit of work"
+- A paragraph would be harder to scan than a list
+- You want readers to quickly see what was touched
+
+It does **not** mean you should bundle unrelated changes into one commit just to write a list. Each commit should still be one focused thing. The bullet points describe the parts of that one thing — not several different things.
+
+A quick comparison:
+
+```
+# Too vague — no list, no context
+Update docs
+
+# Too much in one commit — these are three different concerns
+Fix auth bug, update README, bump version number
+
+# Just right — one concern, multiple parts clearly listed
+Improve the onboarding section of the handbook
+
+- Rewrite Step 1 with clearer terminal instructions
+- Add a note about the handbook/ directory purpose
+- Remove the placeholder text from the prerequisites section
+```
+
+---
+
 ## Why This Matters More Than You Think
 
 Imagine you are debugging a production issue. You know the bug was introduced sometime in the last three months. You have 200 commits to look through.

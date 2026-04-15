@@ -113,7 +113,30 @@ Notice: the subject line is short and imperative. There is a blank line. The bod
 
 ---
 
-### Step 4, Bad Message, Good Message
+### Step 4, Commit with a Bullet List Body
+
+Sometimes one commit touches several related things. Make two small edits to `CONTRIBUTING.md` — for example, add a sentence to one section and adjust the wording in another. Stage everything, then commit using a bullet list body:
+
+```bash
+git commit
+```
+
+In your editor, write:
+
+```
+Improve wording and add detail to contributing guidelines
+
+- Clarify the branch naming suggestion
+- Add a reminder to pull latest main before opening a PR
+```
+
+Subject line first. Blank line. Then bullets starting with `-`.
+
+> 📖 **Stop and read** [THEORY.md](THEORY.md) **, Section 3: Using Bullet Points in the Body**
+
+---
+
+### Step 5, Compare Bad and Good
 
 Now make a small edit to the `CONTRIBUTING.md` — add one line, change a word, anything. Stage it and write **two different versions** of the commit message in your head before committing:
 
