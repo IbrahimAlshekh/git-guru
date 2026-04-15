@@ -6,7 +6,7 @@ No slides. No lectures. You do the work, Git does its thing, and then you unders
 
 ---
 
-## A Few Words from the Author
+## A Few Words before You Start
 
 We are living in a strange and exciting moment. AI agents can now write code, good code, sometimes surprisingly good code. In a single afternoon, you can generate more lines than a team would have produced in a week. But here is the thing: all that code still needs to live somewhere, get versioned, get reviewed, get merged, and eventually get shipped. Without Git, none of that works. The more code AI generates, the more Git matters.
 
