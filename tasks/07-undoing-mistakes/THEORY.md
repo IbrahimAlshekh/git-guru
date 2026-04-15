@@ -1,5 +1,7 @@
 # Theory: Task 07
 
+Read each section only when the task tells you to.
+
 ---
 
 ## Section 1: Amend = Rewrite
@@ -60,5 +62,5 @@ This is safe for shared branches because you're not rewriting anything, you're a
 | Last commit, not yet pushed | `amend` |
 | Last few commits, not yet pushed | `reset` |
 | Any commit that's already pushed | `revert` |
-| Staged file you want to unstage | `reset HEAD <file>` |
+| Staged file you want to unstage | `restore --staged <file>` |
 | Working directory changes to discard | `restore <file>` |

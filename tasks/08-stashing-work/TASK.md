@@ -2,7 +2,7 @@
 
 ## The Scenario
 
-You're halfway through writing an onboarding guide when an urgent message comes in: "There's a typo on the main page, can you fix it right now?" You can't switch branches with uncommitted work (well, sometimes you can, but it's messy). You don't want to commit half-finished work either.
+You're halfway through writing an onboarding guide when an urgent message comes in: "There's a typo on the main page, can you fix it right now?" You can't commit half-finished work, and switching branches while files are in-flight is asking for trouble.
 
 Solution: **stash** it.
 

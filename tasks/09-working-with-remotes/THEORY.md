@@ -1,5 +1,7 @@
 # Theory: Task 09
 
+Read each section only when the task tells you to.
+
 ---
 
 ## Section 1: What Is a Remote?

@@ -85,18 +85,18 @@ git add README.md
 Wait, you don't want that committed. **Unstage** the file:
 
 ```bash
-git reset HEAD README.md
+git restore --staged README.md
 ```
+
+(Older Git versions use `git reset HEAD README.md`, same result)
 
 The file is still modified (check `git status`), but it's no longer staged.
 
 Now discard the change entirely, go back to the last committed version:
 
 ```bash
-git checkout -- README.md
+git restore README.md
 ```
-
-(Or in newer Git: `git restore README.md`)
 
 Check:
 
@@ -171,8 +171,8 @@ git log --oneline -4
 ## What You Just Learned
 
 - **`git commit --amend`**, rewrites the last commit (message or content). Only for unpushed commits.
-- **`git reset HEAD <file>`**, unstages a file without losing changes
-- **`git checkout -- <file>`** / **`git restore <file>`**, discards working directory changes
+- **`git restore --staged <file>`**, unstages a file without losing changes
+- **`git restore <file>`**, discards working directory changes (gone, no recovery)
 - **`git revert <commit>`**, creates a new commit that undoes a previous one. Safe for shared history.
 - **Golden rule:** If the commit has been pushed/shared, use `revert`. If it's still local, `amend` or `reset` are fine.
 

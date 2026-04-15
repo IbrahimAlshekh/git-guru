@@ -160,6 +160,8 @@ git log --oneline --graph --all
 - Switching branches changes the files on disk
 - Commits on one branch don't appear on another (yet)
 
+Because branching is free, there's no reason not to use it. Every piece of work that might take more than one commit, or that you might want to abandon, belongs on a branch. The cost is zero. The safety is real.
+
 ---
 
 → Next: [Task 05: Merging](../05-merging/TASK.md)

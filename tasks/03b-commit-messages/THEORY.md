@@ -6,7 +6,7 @@ Read each section only when the task tells you to.
 
 ## Section 1: The Anatomy of a Good Commit Message
 
-A commit message is not a note to yourself about what you just did. It is a message to whoever reads this repository in the future — including you, six months from now, when you have completely forgotten the context.
+A commit message is not a note to yourself about what you just did. It is a message to whoever reads this repository in the future, including you, six months from now, when you have completely forgotten the context.
 
 The test of a good commit message is simple: can someone read it in `git log` and understand what happened and why, without opening the code?
 
@@ -44,7 +44,7 @@ Git itself uses the imperative mood in its own generated messages:
 
 Your messages should fit naturally into this pattern. Write as if you are commanding the codebase: "Add this", "Fix that", "Remove the other thing."
 
-A simple test: your message should complete the sentence — *"If applied, this commit will..."*
+A simple test: your message should complete the sentence, *"If applied, this commit will..."*
 
 - "If applied, this commit will **add contributing guidelines**." ✓
 - "If applied, this commit will **added contributing guidelines**." ✗
@@ -59,10 +59,10 @@ A commit message has two parts. You have only been using the first one.
 
 The first line of your commit message. Keep it:
 
-- **Under 50 characters** — most Git tools truncate at 72, but 50 is the target for clean display in `git log --oneline`
-- **Capitalized** — "Add contributing guidelines", not "add contributing guidelines"
-- **No period at the end** — it is a title, not a sentence
-- **Imperative mood** — "Add", not "Added" or "Adding"
+- **Under 50 characters**, most Git tools truncate at 72, but 50 is the target for clean display in `git log --oneline`
+- **Capitalized**, "Add contributing guidelines", not "add contributing guidelines"
+- **No period at the end**, it is a title, not a sentence
+- **Imperative mood**, "Add", not "Added" or "Adding"
 
 ### The blank line
 
@@ -70,7 +70,7 @@ When you write a commit message in your editor (without `-m`), leave the second 
 
 ### The body
 
-Not every commit needs a body. A simple change — fixing a typo, renaming a file — probably does not. But when the *why* is not obvious from the subject line alone, add a body.
+Not every commit needs a body. A simple change, fixing a typo, renaming a file, probably does not. But when the *why* is not obvious from the subject line alone, add a body.
 
 The body is for:
 - **Why** you made the change, not *what* you changed (the diff already shows what)
@@ -94,7 +94,7 @@ Wrap body lines at 72 characters. This keeps them readable in terminals and Git 
 
 ## Section 3: Using Bullet Points in the Body
 
-Sometimes a commit covers more than one related change — a few fixes, a few additions that belong together. In that case, a bullet list in the body is cleaner than a paragraph.
+Sometimes a commit covers more than one related change, a few fixes, a few additions that belong together. In that case, a bullet list in the body is cleaner than a paragraph.
 
 The structure is always the same: short subject line, blank line, then the list.
 
@@ -112,18 +112,18 @@ This works well when:
 - A paragraph would be harder to scan than a list
 - You want readers to quickly see what was touched
 
-It does **not** mean you should bundle unrelated changes into one commit just to write a list. Each commit should still be one focused thing. The bullet points describe the parts of that one thing — not several different things.
+It does **not** mean you should bundle unrelated changes into one commit just to write a list. Each commit should still be one focused thing. The bullet points describe the parts of that one thing, not several different things.
 
 A quick comparison:
 
 ```
-# Too vague — no list, no context
+# Too vague, no list, no context
 Update docs
 
-# Too much in one commit — these are three different concerns
+# Too much in one commit, these are three different concerns
 Fix auth bug, update README, bump version number
 
-# Just right — one concern, multiple parts clearly listed
+# Just right, one concern, multiple parts clearly listed
 Improve the onboarding section of the handbook
 
 - Rewrite Step 1 with clearer terminal instructions
@@ -169,5 +169,5 @@ You can read the list and immediately narrow it down to two or three candidates.
 - Subject line: imperative, under 50 characters, no period
 - Blank line between subject and body
 - Body: explain *why*, not *what*; wrap at 72 characters
-- Not every commit needs a body — but when context matters, add it
+- Not every commit needs a body, but when context matters, add it
 - You are writing for your future self and for your teammates

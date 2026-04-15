@@ -1,5 +1,7 @@
 # Theory: Task 05
 
+Read each section only when the task tells you to.
+
 ---
 
 ## Section 1: Fast-Forward vs Three-Way Merge

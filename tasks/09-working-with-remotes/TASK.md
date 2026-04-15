@@ -181,6 +181,8 @@ ls
 - `origin/main` is a remote tracking branch, Git's bookmark for "where main is on the remote"
 - Push and pull keep local and remote in sync
 
+The important mental model: your local repo and GitHub are two independent copies. Nothing syncs automatically. You decide when to push and when to pull. That's intentional, it means you can work offline, commit freely, and choose when to share.
+
 ---
 
 → Next: [Task 10: Collaboration Basics](../10-collaboration-basics/TASK.md)

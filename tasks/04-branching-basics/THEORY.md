@@ -1,5 +1,7 @@
 # Theory: Task 04
 
+Read each section only when the task tells you to.
+
 ---
 
 ## Section 1: What Is a Branch?

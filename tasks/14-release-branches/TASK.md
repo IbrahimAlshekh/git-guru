@@ -175,6 +175,8 @@ git show develop:README.md | grep "Deployment"
 - Tags mark specific releases on `main`, they're permanent labels
 - `git tag -a v1.0.0 -m "message"` creates an annotated tag with a message
 
+The dual merge, into `main` AND back into `develop`, is the part people most often forget. If you only merge to `main`, every fix made during stabilization disappears the moment the next release is cut from `develop`. The back-merge exists to prevent exactly that.
+
 ---
 
 → Next: [Task 15: Hotfix Branches](../15-hotfix-branches/TASK.md)

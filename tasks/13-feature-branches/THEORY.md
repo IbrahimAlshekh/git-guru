@@ -1,5 +1,7 @@
 # Theory: Task 13
 
+Read each section only when the task tells you to.
+
 ---
 
 ## Section 1: Why --no-ff?

@@ -106,6 +106,8 @@ If you see your commit message and your file content, you've completed Task 01.
 - `git commit` saves a snapshot
 - A commit is not just "saving", it's saving a *specific set of changes you chose*
 
+That last point matters more than it seems. Every commit you make from here on is a decision: what goes in, what stays out, and what message explains it. That's the whole discipline of Git, compressed into those three commands.
+
 ---
 
 → Next: [Task 02: Tracking Changes](../02-tracking-changes/TASK.md)

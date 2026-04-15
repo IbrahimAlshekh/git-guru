@@ -168,6 +168,8 @@ grep "<<<" README.md
 - Conflicts are not errors, they're Git asking for your judgment
 - `git branch -d` deletes branches that have been merged
 
+You've now done what most developers dread. And the process was: open the file, decide what the right content is, save it, tell Git you're done. That's all it ever is. The conflict markers look alarming the first time. By the fifth time, they're just formatting.
+
 ---
 
 → Next: [Task 07: Undoing Mistakes](../07-undoing-mistakes/TASK.md)

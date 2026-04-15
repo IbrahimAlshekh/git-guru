@@ -1,5 +1,7 @@
 # Theory: Task 06
 
+Read each section only when the task tells you to.
+
 ---
 
 ## Section 1: Anatomy of a Conflict

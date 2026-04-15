@@ -113,9 +113,12 @@ Create a PR for `feature/workflow-update`:
 
 ### Step 6, Review and Merge the Teammate's Work
 
-On GitHub, switch to the `feature/security-guidelines` branch (use the branch dropdown or check the Pull Requests tab if the teammate also created one).
+On GitHub, open the Pull Requests tab. Create a PR for the `feature/security-guidelines` branch if there isn't one yet:
+- Title: "Add security guidelines"
+- Description: "Adds password, code security, and incident response guidelines."
+- Click "Create pull request"
 
-Create a PR for it too if needed, then merge it:
+Then merge it:
 - Click "Merge pull request"
 - Click "Confirm merge"
 - Click "Delete branch" (clean up)

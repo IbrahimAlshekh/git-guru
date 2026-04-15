@@ -151,6 +151,8 @@ git branch -a | grep origin
 - Gitflow is a **convention**, Git doesn't enforce it; your team does
 - It trades simplicity for structure, useful when you need versioned releases
 
+The key shift is mental: in GitHub Flow, `main` is where you work toward. In Gitflow, `main` is almost off-limits, it only receives finished, versioned work. Everything else lives in `develop` and its short-lived branches.
+
 ---
 
 → Next: [Task 13: Feature Branches](../13-feature-branches/TASK.md)

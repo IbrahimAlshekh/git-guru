@@ -4,7 +4,7 @@
 
 You just ran `git log` and looked at your commit history. Some messages make sense. Some could mean almost anything. Six months from now, a message like "fix stuff" or "updates" tells you nothing about what changed, why, or what to look for if something breaks.
 
-This task is not about learning a new Git command. It is about learning to use the one you already know — `git commit` — in a way that makes your history genuinely useful.
+This task is not about learning a new Git command. It is about learning to use the one you already know, `git commit`, in a way that makes your history genuinely useful.
 
 ---
 
@@ -92,7 +92,7 @@ Stage it:
 git add CONTRIBUTING.md
 ```
 
-Now commit it — but this time, write a commit with both a **subject line and a body**:
+Now commit it, but this time, write a commit with both a **subject line and a body**:
 
 ```bash
 git commit
@@ -115,7 +115,7 @@ Notice: the subject line is short and imperative. There is a blank line. The bod
 
 ### Step 4, Commit with a Bullet List Body
 
-Sometimes one commit touches several related things. Make two small edits to `CONTRIBUTING.md` — for example, add a sentence to one section and adjust the wording in another. Stage everything, then commit using a bullet list body:
+Sometimes one commit touches several related things. Make two small edits to `CONTRIBUTING.md`, for example, add a sentence to one section and adjust the wording in another. Stage everything, then commit using a bullet list body:
 
 ```bash
 git commit
@@ -138,7 +138,7 @@ Subject line first. Blank line. Then bullets starting with `-`.
 
 ### Step 5, Compare Bad and Good
 
-Now make a small edit to the `CONTRIBUTING.md` — add one line, change a word, anything. Stage it and write **two different versions** of the commit message in your head before committing:
+Now make a small edit to the `CONTRIBUTING.md`, add one line, change a word, anything. Stage it and write **two different versions** of the commit message in your head before committing:
 
 1. A vague one: something like `"update contributing"` or `"fix"`
 2. A clear one: something like `"Clarify pull request review requirement in CONTRIBUTING.md"`
@@ -174,7 +174,7 @@ Your recent commit should have a clear subject line and a body that explains the
 - A commit message is documentation, not just a label
 - The imperative mood keeps your messages consistent with Git's own language
 - A subject line (short, under 50 characters) and a body (explaining the *why*) are the two parts of a proper commit message
-- Writing good messages is a habit — it becomes natural with practice
+- Writing good messages is a habit, it becomes natural with practice
 - Your commit history is something others (and your future self) will read
 
 ---

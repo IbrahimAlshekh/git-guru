@@ -135,6 +135,8 @@ git ls-files
 - `git show <hash>:<file>` lets you see any file at any point in history
 - Every commit has a unique hash, this is how Git identifies everything
 
+`git log` is not just archaeology. When something breaks, when a teammate asks "what changed last week?", when you want to understand why a file looks the way it does, this is what you reach for. Reading history fluently is what separates someone who uses Git from someone who understands it.
+
 ---
 
 → Next: [Task 03b: Writing Commit Messages That Actually Help](../03b-commit-messages/TASK.md)

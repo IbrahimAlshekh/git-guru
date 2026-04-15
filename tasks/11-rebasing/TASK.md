@@ -120,7 +120,7 @@ git branch -d docs/improve-readme
 git push
 ```
 
-### Step 7, Interactive Rebase (Bonus)
+### Step 7, Interactive Rebase
 
 Let's try one more thing. Create a branch and make some messy commits:
 
@@ -208,6 +208,8 @@ git log --oneline | grep "Fix typos"
 - `git rebase -i HEAD~N` lets you squash, reorder, or edit recent commits
 - **Golden rule:** never rebase commits that have been pushed and shared. Rebase rewrites history, if others have those commits, you'll cause conflicts.
 - Rebase vs merge is a team decision, not a right/wrong question
+
+Interactive rebase is one of the most useful tools for keeping history honest. Before opening a pull request, a quick `rebase -i` to clean up your "wip" and "fix typo" commits costs five minutes and makes your teammates' review much easier.
 
 ---
 

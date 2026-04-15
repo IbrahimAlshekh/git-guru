@@ -1,5 +1,7 @@
 # Theory: Task 14
 
+Read each section only when the task tells you to.
+
 ---
 
 ## Section 1: The Release Branch Lifecycle

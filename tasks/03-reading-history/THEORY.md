@@ -1,5 +1,7 @@
 # Theory: Task 03
 
+Read each section only when the task tells you to.
+
 ---
 
 ## Section 1: The Commit Graph

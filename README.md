@@ -134,8 +134,8 @@ Start with Task 01: `../tasks/01-first-commit/TASK.md`
 
 ## Contributing
 
-This handbook is a living project, and contributions are genuinely welcome. If you find something misleading, a task that could be clearer, a concept that deserves a better explanation, or simply a typo — open an issue or submit a pull request. The goal is to make this useful for as many people as possible, and that is easier with more perspectives than one.
+This handbook is a living project, and contributions are genuinely welcome. If you find something misleading, a task that could be clearer, a concept that deserves a better explanation, or simply a typo, open an issue or submit a pull request. The goal is to make this useful for as many people as possible, and that is easier with more perspectives than one.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, share, and adapt it — just keep the attribution.
+This project is licensed under the [MIT License](LICENSE). You are free to use, share, and adapt it, just keep the attribution.

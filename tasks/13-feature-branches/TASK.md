@@ -209,6 +209,8 @@ git log develop --oneline -1
 - Features never touch `main` directly
 - Clean up branches after merging, both locally and on the remote
 
+You just ran two features in parallel, something that would be chaotic without branches and impossible to review without clear merge commits. In a real team, these features might be developed by different people, on different machines, over different days. The Gitflow pattern handles all of that without anyone stepping on anyone else's work.
+
 ---
 
 → Next: [Task 14: Release Branches](../14-release-branches/TASK.md)
