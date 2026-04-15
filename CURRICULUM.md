@@ -24,6 +24,11 @@ After this tier, you can manage your own projects with Git confidently.
 - **Git concepts:** `log`, `show`, `log --oneline`, `log --graph`
 - **Mental model:** The commit graph, linear history as a chain of snapshots
 
+### Task 03b, Writing Commit Messages That Actually Help
+- **Scenario:** You have made several commits. Now learn to write messages that are useful, not just labels.
+- **Git concepts:** Imperative mood, subject line, blank line, commit body (`git commit` without `-m`)
+- **Mental model:** A commit message is documentation. Your history is something people (including future you) will read and search.
+
 ### Task 04, Branching Basics
 - **Scenario:** Create a "coding standards" section on a separate branch
 - **Git concepts:** `branch`, `switch`/`checkout`, HEAD
