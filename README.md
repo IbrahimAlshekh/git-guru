@@ -82,7 +82,7 @@ Each task lives in `tasks/XX-task-name/` and contains:
 2. **Read THEORY.md only when the task says to.** Not before. Do first, understand after.
 3. **Don't skip the checkpoints.** Each task has a "Verify" section. Run those commands before moving on.
 4. **Work in the `handbook/` directory.** That's your project. The `tasks/` folder is your guide, don't edit it.
-5. **If you get stuck**, the `solutions/` directory has expected outputs for each task. Use it to get unstuck, not to skip ahead.
+5. **If you get stuck**, [`REFERENCE.md`](REFERENCE.md) describes what your repository should look like after each task. Use it to verify your work or get unstuck, not to skip ahead.
 
 ### The Three Tiers
 
@@ -114,17 +114,6 @@ cd handbook
 > **Important:** The `handbook/` directory is where you do all your work. You'll initialize a *separate* Git repository inside it. This outer project is just the learning material.
 
 ---
-
-# Handbook Directory
-
-This is your workspace. You'll initialize a Git repository here and build the Developer Handbook step by step.
-
-**Do not edit anything in the `tasks/` directory, that's your guide.**
-
-Start with Task 01: `../tasks/01-first-commit/TASK.md`
-
-> Delete this file before starting Task 01, the task will have you create the real README.md from scratch.
-
 
 ## Start Here
 

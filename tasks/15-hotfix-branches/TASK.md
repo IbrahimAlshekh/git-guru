@@ -174,6 +174,8 @@ git show develop:SECURITY.md | grep "16 characters"
 - **Read:** [Pro Git book](https://git-scm.com/book), free, comprehensive, excellent
 - **Decide:** Does your team actually need Gitflow? Or would GitHub Flow or trunk-based development be simpler? Now you have the knowledge to make that call.
 
+A full map of suggested next steps, including comparisons to other workflows and deeper Git topics, is in [`CURRICULUM.md`](../../CURRICULUM.md) under "After You Finish".
+
 ### The Developer Handbook
 
 Look at what you built: a complete team handbook with real content, meaningful commit history, proper branching, tagged releases, and a hotfix. This isn't a toy project, it's a real artifact of your learning.

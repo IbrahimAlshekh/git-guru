@@ -76,7 +76,9 @@ git commit -m "Add detached HEAD troubleshooting entry"
 
 ### Step 4, Simulate Ongoing Development
 
-While the release stabilizes, the team keeps working. Switch to `develop` and add a new feature commit:
+While the release stabilizes, the team keeps working. This step exists to create a real divergence between `release/v1.0.0` and `develop`, so that when you back-merge the release into `develop` in Step 7, Git actually has to carry the release bug fix back across a gap. Without this divergence, both branches would be identical and there would be nothing to demonstrate.
+
+Switch to `develop` and add a new feature commit:
 
 ```bash
 git switch develop

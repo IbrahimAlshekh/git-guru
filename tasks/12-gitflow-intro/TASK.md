@@ -8,6 +8,14 @@ Before jumping in, you need to understand what Gitflow is, set it up, and see ho
 
 ---
 
+## A Note on Merges in This Tier
+
+In Tier 2 you merged via Pull Requests on GitHub. In Tier 3 (Tasks 12–15), the merges are done locally with `git merge --no-ff`. This keeps the exercises self-contained and lets you focus on the Gitflow structure without context-switching to a browser.
+
+In a real team, every merge shown in Tier 3 would go through a Pull Request. The mechanics are the same: the branch is reviewed, then merged with `--no-ff` (either manually or by the GitHub "Merge commit" button). Keep that in mind as you work through the tasks.
+
+---
+
 ## What to Do
 
 ### Step 1, Understand the Context

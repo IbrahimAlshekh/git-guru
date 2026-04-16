@@ -115,9 +115,17 @@ Notice: the subject line is short and imperative. There is a blank line. The bod
 
 ### Step 4, Commit with a Bullet List Body
 
-Sometimes one commit touches several related things. Make two small edits to `CONTRIBUTING.md`, for example, add a sentence to one section and adjust the wording in another. Stage everything, then commit using a bullet list body:
+Sometimes one commit touches several related things. Make these two small edits to `CONTRIBUTING.md`:
+
+1. In the **How to Contribute** section, replace the first step with:
+   `1. Create a branch from main using the pattern feature/short-description`
+2. In the same section, replace the third step with:
+   `3. Pull the latest main into your branch, then open a pull request and describe what you changed and why`
+
+Stage everything, then commit using a bullet list body:
 
 ```bash
+git add CONTRIBUTING.md
 git commit
 ```
 
